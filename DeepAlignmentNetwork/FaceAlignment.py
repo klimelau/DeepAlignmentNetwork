@@ -9,13 +9,13 @@ import theano
 
 from scipy import ndimage
 
-from AffineTransformLayer import AffineTransformLayer
-from TransformParamsLayer import TransformParamsLayer
-from LandmarkImageLayer import LandmarkImageLayer
-from LandmarkInitLayer import LandmarkInitLayer
-from LandmarkTranformLayer import LandmarkTransformLayer
+from .AffineTransformLayer import AffineTransformLayer
+from .TransformParamsLayer import TransformParamsLayer
+from .LandmarkImageLayer import LandmarkImageLayer
+from .LandmarkInitLayer import LandmarkInitLayer
+from .LandmarkTranformLayer import LandmarkTransformLayer
 
-import utils
+from . import utils
 
 class FaceAlignment(object):
     def __init__(self, height, width, nChannels, nStages, confidenceLayer=False):        
